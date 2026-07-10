@@ -50,11 +50,14 @@ With additional time, I would explore:
 ## Project Structure
 
 ```text
-.
+Downshift/
 ├── assets/
-├── css/
-├── data/
-├── js/
+│   ├── Banner.png
+│   └── logo.svg
+├── .gitignore
 ├── index.html
-└── README.md
+├── items.json
+├── README.md
+├── script.js
+└── style.css
 ```
