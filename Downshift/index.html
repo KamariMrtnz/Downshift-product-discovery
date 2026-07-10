@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downshift Home Goods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="/Downshift/script.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <div class="logo">
+                <img src="assets/logo.svg" alt="Downshift">
+                <span>Downshift</span>
+            </div>
+            <div class="search-wrapper">
+
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Search by product, brand, material, or category..."
+                >
+
+                <span class="search-icon-right" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                        <path d="M20 20L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </span>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Furniture</a>
+                <a href="#">Lighting</a>
+                <a href="#">Decor</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+        
+                <div class="hero-content">
+        
+                    <p class="eyebrow">HOME COLLECTION</p>
+        
+                    <h1>Find pieces you'll love.</h1>
+        
+                    <p class="hero-text">
+                        Search furniture, lighting, décor, office essentials, storage, and more from thousands of curated home goods.
+                    </p>
+        
+                </div>
+        
+                <div class="hero-media">
+                    <img
+                    src="assets//Banner.png"
+                    alt="Modern living room"
+                    >
+                </div>
+        
+            </div>
+        </section>
+        <section class="toolbar">
+            <div class="container toolbar-inner">
+                <div class="toolbar-search">
+                    <div id="category-filters" class="category-chips">
+                        <button class="active">All</button>
+                        <button>Furniture</button>
+                        <button>Lighting</button>
+                        <button>Storage</button>
+                        <button>Office</button>
+                        <button>Kitchen</button>
+                        <button>Decor</button>
+                        <button>Outdoor</button>
+                    </div>
+                </div>
+                <p id="results-count">
+                    <strong>4,032</strong> products available
+                </p>
+                <div class="toolbar-actions">
+                    <select id="sort">
+                        <option value="relevance">Relevance</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                    </select>
+                    <select id="page-size">
+                        <option value="16" selected>16 / page</option>
+                        <option value="32">32 / page</option>
+                        <option value="48">48 / page</option>
+                        <option value="64">64 / page</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog-header">
+                    <h3>Browse Products</h3>
+                    <p>Explore our complete collection of home goods.</p>
+                </div>
+                <div id="product-grid" class="product-grid">
+                    <!-- Product cards are rendered dynamically by script.js -->
+                </div>
+                <div id="empty-state" hidden>
+                    <h3>No products found.</h3>
+                    <p>Try adjusting your search or filters.</p>
+                </div>
+            </div>
+        </section>
+        <section class="store-benefits">
+            <div class="container benefits-grid">
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">🚚</span>
+                    <div>
+                        <h4>Fast &amp; Free Shipping</h4>
+                        <p>On orders over $99</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">🛡️</span>
+                    <div>
+                        <h4>Secure Checkout</h4>
+                        <p>Your data is always protected.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">↺</span>
+                    <div>
+                        <h4>Easy Returns</h4>
+                        <p>30-day returns on most items.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-item">
+                    <span class="benefit-icon">🎧</span>
+                    <div>
+                        <h4>Customer Support</h4>
+                        <p>We're here to help.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
